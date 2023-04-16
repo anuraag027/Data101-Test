@@ -33,8 +33,9 @@ if st.button("Generate"):
     st.dataframe(pd.read_csv("airbnb_questions.csv"))#,height=300)
 
     st.download_button(
-         label="Download data as CSV",
-         data=csv,
-         file_name='airbnb_questions.csv',
-         mime='text/csv',
-     )
+   "Press to Download",
+   csv,
+   "airbnb_questions.csv",
+   "text/csv",
+   key='download-csv'
+)
