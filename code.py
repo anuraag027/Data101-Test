@@ -32,10 +32,9 @@ if st.button("Generate"):
     csv = df.to_csv("airbnb_questions.csv", index=False)#.encode("utf-8")
     st.dataframe(pd.read_csv("airbnb_questions.csv"))#,height=300)
 
-   st.download_button(
+    st.download_button(
    "Press to Download",
    csv,
    "airbnb_questions.csv",
    "text/csv",
-   key='download-tools-csv'
-)
+   key='download-tools-csv')
