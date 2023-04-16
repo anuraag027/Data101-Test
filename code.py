@@ -34,7 +34,7 @@ if st.button("Generate"):
 
     st.download_button(
   label="Download data as CSV",
-  data=pd.read_csv("airbnb_questions.csv"),#df.to_csv("airbnb_questions.csv", index=False).encode('utf-8'),
+  data=data=df.to_csv(index=False).encode('utf-8'),#pd.read_csv("airbnb_questions.csv"),#df.to_csv("airbnb_questions.csv", index=False).encode('utf-8'),
   file_name='output.csv',
   mime='text/csv',
 )
