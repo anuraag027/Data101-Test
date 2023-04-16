@@ -29,7 +29,7 @@ if st.button("Generate"):
     st.write(questions)
     # write questions to a CSV file
     df = pd.DataFrame(questions, columns=["Question"])
-    df.to_csv("airbnb_questions.csv", index=False)
+    csv = df.to_csv("airbnb_questions.csv", index=False)
     st.dataframe(pd.read_csv("airbnb_questions.csv"))#,height=300)
 
 st.download_button(
