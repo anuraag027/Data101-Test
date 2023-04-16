@@ -1,5 +1,6 @@
 import pandas as pd
 import streamlit as st
+import random
 
 airbnb = pd.read_csv("https://raw.githubusercontent.com/dev7796/data101_tutorial/main/files/dataset/airbnb.csv")
 
