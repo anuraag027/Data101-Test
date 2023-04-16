@@ -30,11 +30,11 @@ if st.button("Generate"):
     # write questions to a CSV file
     df = pd.DataFrame(questions, columns=["Question"])
     df.to_csv("airbnb_questions.csv", index=False)
-    st.dataframe(pd.read_csv("airbnb_questions.csv"),height=600)
+    st.dataframe(pd.read_csv("airbnb_questions.csv"))
 
     st.download_button(
   label="Download data as CSV",
-  data=df.to_csv("airbnb_questions.csv", index=False).encode('utf-8'),
+  data="airbnb_questions.csv",#df.to_csv("airbnb_questions.csv", index=False).encode('utf-8'),
   file_name='output.csv',
   mime='text/csv',
 )
