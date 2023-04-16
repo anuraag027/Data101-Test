@@ -1,8 +1,3 @@
-!pip install pandas
-!pip install streamlit
-
-#Import the necessary libraries and load the airbnb dataset:
-
 import pandas as pd
 import streamlit as st
 
