@@ -30,4 +30,4 @@ if st.button("Generate"):
     # write questions to a CSV file
     df = pd.DataFrame(questions, columns=["Question"])
     df.to_csv("airbnb_questions.csv", index=False)
-    st.dataframe(pd.read_csv("airbnb_questions.csv"),height=300)
+    st.dataframe(pd.read_csv("airbnb_questions.csv"))#,height=300)
