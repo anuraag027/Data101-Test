@@ -40,6 +40,7 @@ def ask_gpt(prompt, question_type):
     if response.status_code == 200:
         return response.json()["choices"][0]["text"]
     else:
+        st.write(response.status_code)
         return "Error: Failed to generate answer. Please try again."
 
 # Streamlit app code
