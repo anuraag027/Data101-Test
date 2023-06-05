@@ -6,7 +6,7 @@ import requests
 # GPT API endpoint
 API_ENDPOINT = "https://api.openai.com/v1/engines/davinci-codex/completions"
 # Set your OpenAI API key here
-API_KEY = "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"
+API_KEY = "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"
 
 airbnb = pd.read_csv("https://raw.githubusercontent.com/dev7796/data101_tutorial/main/files/dataset/airbnb.csv")
 
